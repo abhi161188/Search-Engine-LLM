@@ -17,4 +17,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_HOME: Toolsandagent/
         run: git push --force https://abhijimmy16:$HF_TOKEN@huggingface.co/spaces/abhijimmy16/Search_Engine_llm main
